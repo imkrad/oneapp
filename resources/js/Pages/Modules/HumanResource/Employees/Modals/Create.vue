@@ -73,38 +73,36 @@
                             <div class="flex-grow-1 ms-2"></div>
                             <div class="flex-shrink-0">
                                 <div class="d-inline-block" v-for="(list,index) in dropdowns.employment_statuses"  v-bind:key="index">
-                                    <div class="custom-control custom-radio mb-3 me-3">
+                                    <div class="custom-control custom-radio mb-3 ms-4">
                                         <input type="radio" id="customRadio1" class="custom-control-input me-2" @input="handleInput('type_id')" :value="list.value" v-model="form.type_id">
-                                        <label class="custom-control-label fw-normal" for="customRadio1">{{list.name}}</label>
+                                        <label class="custom-control-label fs-12 fw-normal" for="customRadio1">{{list.name}}</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </BCol>
                    <BCol lg="12" class="mt-n3 mb-n4"><hr class="text-muted"/></BCol>
-                    <BCol lg="6" class="mt-2">
+                    <BCol lg="6" class="mt-3">
                         <InputLabel for="name" value="Division" :message="form.errors.division_id"/>
                         <Multiselect :options="dropdowns.divisions" :searchable="true" label="name" v-model="form.division_id" placeholder="Select Division" @input="handleInput('division_id')"/>
                     </BCol>
-                    <BCol lg="6" class="mt-2">
+                    <BCol lg="6" class="mt-3">
                         <InputLabel for="name" value="Station" :message="form.errors.station_id"/>
                         <Multiselect :options="dropdowns.stations" :searchable="true" label="name" v-model="form.station_id" placeholder="Select Category" @input="handleInput('station_id')"/>
                     </BCol>
-                    <template v-if="form.type_id">
-                        <BCol lg="6" class="mt-1">
-                            <InputLabel for="name" value="Unit" :message="form.errors.unit_id"/>
-                            <Multiselect :options="units" :searchable="true" label="name" v-model="form.unit_id" placeholder="Select Unit" @input="handleInput('unit_id')"/>
-                        </BCol>
-                        <BCol lg="6" class="mt-1">
-                            <InputLabel for="name" value="Position" :message="form.errors.position_id"/>
-                            <Multiselect :options="filteredPositions" :searchable="true" label="name" v-model="form.position_id" placeholder="Select Position" @input="handleInput('position_id')"/>
-                        </BCol>
-                        <BCol lg="12" class="mt-0"><hr class="text-muted"/></BCol>
-                        <div class="mt-n1 ms-2 form-check">
-                            <input type="checkbox" v-model="form.check" class="form-check-input" id="checkTerms">
-                            <label class="form-check-label" for="checkTerms">I agree to the <span class="fw-semibold">Terms of Service</span> and Privacy Policy</label>
-                        </div>
-                    </template>
+                    <BCol lg="6" class="mt-1">
+                        <InputLabel for="name" value="Unit" :message="form.errors.unit_id"/>
+                        <Multiselect :options="units" :searchable="true" label="name" v-model="form.unit_id" placeholder="Select Unit" @input="handleInput('unit_id')"/>
+                    </BCol>
+                    <BCol lg="6" class="mt-1">
+                        <InputLabel for="name" value="Position" :message="form.errors.position_id"/>
+                        <Multiselect :options="filteredPositions" :searchable="true" label="name" v-model="form.position_id" placeholder="Select Position" @input="handleInput('position_id')"/>
+                    </BCol>
+                    <BCol lg="12" class="mt-0"><hr class="text-muted"/></BCol>
+                    <div class="mt-n1 ms-2 form-check">
+                        <input type="checkbox" v-model="form.check" class="form-check-input" id="checkTerms">
+                        <label class="form-check-label" for="checkTerms">I agree to the <span class="fw-semibold">Terms of Service</span> and Privacy Policy</label>
+                    </div>
                 </BRow>
              
                 <div class="text-end mt-2">

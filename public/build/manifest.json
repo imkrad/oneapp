@@ -7,38 +7,9 @@
     "file": "assets/layers-BWBAp2CZ.png",
     "src": "node_modules/leaflet/dist/images/layers.png"
   },
-  "node_modules/leaflet/dist/images/marker-icon-2x.png": {
-    "file": "assets/marker-icon-2x-1TirABJh.js",
-    "name": "marker-icon-2x",
-    "src": "node_modules/leaflet/dist/images/marker-icon-2x.png",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/marker-icon-2x-_ZA0WGCc.png"
-    ]
-  },
   "node_modules/leaflet/dist/images/marker-icon.png": {
-    "file": "assets/marker-icon-B6h-nX3D.js",
-    "name": "marker-icon",
-    "src": "node_modules/leaflet/dist/images/marker-icon.png",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/marker-icon-hN30_KVU.png"
-    ]
-  },
-  "node_modules/leaflet/dist/images/marker-shadow.png": {
-    "file": "assets/marker-shadow-B9CpECYs.js",
-    "name": "marker-shadow",
-    "src": "node_modules/leaflet/dist/images/marker-shadow.png",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/marker-shadow-f7SaPCxT.png"
-    ]
-  },
-  "node_modules/leaflet/dist/leaflet-src.esm.js": {
-    "file": "assets/leaflet-src.esm-HdBnhJze.js",
-    "name": "leaflet-src.esm",
-    "src": "node_modules/leaflet/dist/leaflet-src.esm.js",
-    "isDynamicEntry": true
+    "file": "assets/marker-icon-hN30_KVU.png",
+    "src": "node_modules/leaflet/dist/images/marker-icon.png"
   },
   "public/fonts/boxicons.eot": {
     "file": "assets/boxicons-CSrLvhY_.eot",
@@ -196,10 +167,6 @@
     "file": "assets/calendar-yfM8ZpJt.png",
     "src": "public/images/apps/calendar.png"
   },
-  "public/images/apps/chatbox.png": {
-    "file": "assets/chatbox-DnuZYIu7.png",
-    "src": "public/images/apps/chatbox.png"
-  },
   "public/images/apps/inventory.png": {
     "file": "assets/inventory-DCAGjWxa.png",
     "src": "public/images/apps/inventory.png"
@@ -208,25 +175,17 @@
     "file": "assets/laboratory-DGebyxyk.png",
     "src": "public/images/apps/laboratory.png"
   },
-  "public/images/apps/referral.png": {
-    "file": "assets/referral-eRDadRH6.png",
-    "src": "public/images/apps/referral.png"
-  },
-  "public/images/apps/testservices.png": {
-    "file": "assets/testservices-BL0ePEow.png",
-    "src": "public/images/apps/testservices.png"
-  },
   "public/images/cover-pattern.png": {
     "file": "assets/cover-pattern-CzcjCYXt.png",
     "src": "public/images/cover-pattern.png"
   },
   "public/images/logo-dark.png": {
-    "file": "assets/logo-dark-BXPuKeZY.png",
+    "file": "assets/logo-dark-BTQwWYkM.png",
     "src": "public/images/logo-dark.png"
   },
   "public/images/logo-light.png": {
-    "file": "assets/logo-dark-BXPuKeZY.png",
-    "src": "public/images/logo-dark.png"
+    "file": "assets/logo-light-xO5Q2xFH.png",
+    "src": "public/images/logo-light.png"
   },
   "public/images/logo-sm.png": {
     "file": "assets/logo-sm-BMbbSDmV.png",
@@ -249,34 +208,20 @@
     "src": "public/images/sidebar/img-4.jpg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-CfHpXvDo.js",
+    "file": "assets/app-DPJ5wdAt.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
-    "dynamicImports": [
-      "node_modules/leaflet/dist/images/marker-icon-2x.png",
-      "node_modules/leaflet/dist/images/marker-icon.png",
-      "node_modules/leaflet/dist/images/marker-shadow.png",
-      "node_modules/leaflet/dist/leaflet-src.esm.js",
-      "node_modules/leaflet/dist/leaflet-src.esm.js",
-      "node_modules/leaflet/dist/leaflet-src.esm.js",
-      "node_modules/leaflet/dist/leaflet-src.esm.js",
-      "node_modules/leaflet/dist/leaflet-src.esm.js",
-      "node_modules/leaflet/dist/leaflet-src.esm.js",
-      "node_modules/leaflet/dist/leaflet-src.esm.js"
-    ],
     "css": [
-      "assets/app-CZtuqkK0.css"
+      "assets/app-DJvbG3wF.css"
     ],
     "assets": [
       "assets/logo-sm-BMbbSDmV.png",
-      "assets/logo-dark-BXPuKeZY.png",
+      "assets/logo-dark-BTQwWYkM.png",
+      "assets/logo-light-xO5Q2xFH.png",
       "assets/laboratory-DGebyxyk.png",
       "assets/inventory-DCAGjWxa.png",
       "assets/calendar-yfM8ZpJt.png",
-      "assets/testservices-BL0ePEow.png",
-      "assets/referral-eRDadRH6.png",
-      "assets/chatbox-DnuZYIu7.png",
       "assets/img-1-C6VsSbnm.jpg",
       "assets/img-2-B0ULeiCa.jpg",
       "assets/img-3-h1U1KdmN.jpg",
