@@ -32,8 +32,8 @@ class DatabaseSeeder extends Seeder
             'sex' => 'Male',
             'birthdate' => '1994-03-11',
             'contact_no' => '09171531652',
-            'marital_id' => 1,
-            'religion_id' => 1,
+            'marital_id' => 3,
+            'religion_id' => 221,
             'blood_id' => 1,
             'user_id' => 1,
             'created_at' => now(),
@@ -54,7 +54,7 @@ class DatabaseSeeder extends Seeder
 
         \DB::table('user_organizations')->insert([
             'user_id' => 1,
-            'status_id' => 1,
+            'status_id' => 2,
             'division_id' => 4,
             'station_id' => 5,
             'position_id' => 76,
@@ -70,5 +70,14 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+
+        \DB::table('user_roles')->insert([
+            'user_id' => 1,
+            'role_id' => 2,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        $this->call(UserCredentialsTableSeeder::class);
+        $this->call(UserAcademicsTableSeeder::class);
     }
 }

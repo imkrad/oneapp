@@ -1194,6 +1194,622 @@ class ListDataTableSeeder extends Seeder
                 'type' => 'Religion',
                 'is_active' => 1,
             ),
+            168 => 
+            array (
+                'id' => 230,
+                'name' => 'Career Service Professional Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            169 => 
+            array (
+                'id' => 231,
+                'name' => 'Career Service Subprofessional Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            170 => 
+            array (
+                'id' => 232,
+                'name' => 'Career Service Executive Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            171 => 
+            array (
+                'id' => 233,
+                'name' => '',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            172 => 
+            array (
+                'id' => 234,
+                'name' => 'Bar and Board Examination Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            173 => 
+            array (
+                'id' => 235,
+                'name' => 'Barangay Health Worker Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            174 => 
+            array (
+                'id' => 236,
+                'name' => 'Barangay Nutrition Scholar Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            175 => 
+            array (
+                'id' => 237,
+                'name' => 'Barangay Official Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            176 => 
+            array (
+                'id' => 238,
+                'name' => 'Electronic Data Processing Specialist Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            177 => 
+            array (
+                'id' => 239,
+                'name' => 'Foreign School Honor Graduate Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            178 => 
+            array (
+                'id' => 240,
+                'name' => 'Honor Graduate Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            179 => 
+            array (
+                'id' => 241,
+                'name' => 'Sanggunian Member Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            180 => 
+            array (
+                'id' => 242,
+                'name' => 'Scientific and Technological Specialist Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            181 => 
+            array (
+                'id' => 243,
+                'name' => 'Skills Eligibility – Category II',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            182 => 
+            array (
+                'id' => 244,
+                'name' => 'Veteran Preference Rating Eligibility',
+                'type' => 'Eligibility',
+                'is_active' => 1,
+            ),
+            183 => 
+            array (
+                'id' => 245,
+                'name' => 'Aeronautical Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            184 => 
+            array (
+                'id' => 246,
+                'name' => 'Agricultural Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            185 => 
+            array (
+                'id' => 247,
+                'name' => 'Agriculturist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            186 => 
+            array (
+                'id' => 248,
+                'name' => 'Architect',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            187 => 
+            array (
+                'id' => 249,
+                'name' => 'Certified Mill Foreman',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            188 => 
+            array (
+                'id' => 250,
+                'name' => 'Certified Mine Foreman',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            189 => 
+            array (
+                'id' => 251,
+                'name' => 'Certified Plant Mechanic',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            190 => 
+            array (
+                'id' => 252,
+            'name' => 'Certified Public Accountant (CPA)',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            191 => 
+            array (
+                'id' => 253,
+                'name' => 'Certified Quarry Foreman',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            192 => 
+            array (
+                'id' => 254,
+                'name' => 'Chemical Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            193 => 
+            array (
+                'id' => 255,
+                'name' => 'Chemist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            194 => 
+            array (
+                'id' => 256,
+                'name' => 'Civil Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            195 => 
+            array (
+                'id' => 257,
+                'name' => 'Criminologist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            196 => 
+            array (
+                'id' => 258,
+                'name' => 'Custom Broker',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            197 => 
+            array (
+                'id' => 259,
+                'name' => 'Dental Hygienist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            198 => 
+            array (
+                'id' => 260,
+                'name' => 'Dental Technologist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            199 => 
+            array (
+                'id' => 261,
+                'name' => 'Dentist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            200 => 
+            array (
+                'id' => 262,
+                'name' => 'Electronics & Communication Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            201 => 
+            array (
+                'id' => 263,
+                'name' => 'Electronics Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            202 => 
+            array (
+                'id' => 264,
+                'name' => 'Electronics Technician',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            203 => 
+            array (
+                'id' => 265,
+                'name' => 'Environmental Planner',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            204 => 
+            array (
+                'id' => 266,
+                'name' => 'Fisheries Technologist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            205 => 
+            array (
+                'id' => 267,
+                'name' => 'Forester',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            206 => 
+            array (
+                'id' => 268,
+                'name' => 'Geodetic Aide',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            207 => 
+            array (
+                'id' => 269,
+                'name' => 'Geodetic Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            208 => 
+            array (
+                'id' => 270,
+                'name' => 'Geologist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            209 => 
+            array (
+                'id' => 271,
+                'name' => 'Guidance Counsellor',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            210 => 
+            array (
+                'id' => 272,
+                'name' => 'Interior Design',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            211 => 
+            array (
+                'id' => 273,
+                'name' => 'Landscape Architect',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            212 => 
+            array (
+                'id' => 274,
+                'name' => 'Librarian',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            213 => 
+            array (
+                'id' => 275,
+                'name' => 'Master Plumber',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            214 => 
+            array (
+                'id' => 276,
+                'name' => 'Mechanical Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            215 => 
+            array (
+                'id' => 277,
+                'name' => 'Mechanical Plant Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            216 => 
+            array (
+                'id' => 278,
+                'name' => 'Med. Lab. Tech',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            217 => 
+            array (
+                'id' => 279,
+                'name' => 'Medical Technologist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            218 => 
+            array (
+                'id' => 280,
+                'name' => 'Metallurgical Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            219 => 
+            array (
+                'id' => 281,
+                'name' => 'Metallurgical Plant Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            220 => 
+            array (
+                'id' => 282,
+            'name' => 'Midwife (New)',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            221 => 
+            array (
+                'id' => 283,
+                'name' => 'Mining Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            222 => 
+            array (
+                'id' => 284,
+                'name' => 'Naval Architect',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            223 => 
+            array (
+                'id' => 285,
+                'name' => 'Nurse',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            224 => 
+            array (
+                'id' => 286,
+                'name' => 'Nutritionist-Dietitian',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            225 => 
+            array (
+                'id' => 287,
+                'name' => 'Occupational Therapy',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            226 => 
+            array (
+                'id' => 288,
+                'name' => 'Occupational Therapy Technician',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            227 => 
+            array (
+                'id' => 289,
+                'name' => 'Optometrist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            228 => 
+            array (
+                'id' => 290,
+                'name' => 'Pharmacist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            229 => 
+            array (
+                'id' => 291,
+                'name' => 'Physical Therapy',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            230 => 
+            array (
+                'id' => 292,
+                'name' => 'Physical Therapy Technician',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            231 => 
+            array (
+                'id' => 293,
+                'name' => 'Physician',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            232 => 
+            array (
+                'id' => 294,
+                'name' => 'Professional Electrical Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            233 => 
+            array (
+                'id' => 295,
+            'name' => 'Professional Electronics Engineer (PECE)',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            234 => 
+            array (
+                'id' => 296,
+                'name' => 'Professional Mechanical Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            235 => 
+            array (
+                'id' => 297,
+                'name' => 'Professional Teacher',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            236 => 
+            array (
+                'id' => 298,
+                'name' => 'Radiologic Technologist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            237 => 
+            array (
+                'id' => 299,
+                'name' => 'Real Estate Appraiser',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            238 => 
+            array (
+                'id' => 300,
+                'name' => 'Real Estate Broker',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            239 => 
+            array (
+                'id' => 301,
+                'name' => 'Real Estate Consultant',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            240 => 
+            array (
+                'id' => 302,
+                'name' => 'Registered Electrical Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            241 => 
+            array (
+                'id' => 303,
+                'name' => 'Registered Master Electrician',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            242 => 
+            array (
+                'id' => 304,
+                'name' => 'Sanitary Engineer',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            243 => 
+            array (
+                'id' => 305,
+                'name' => 'Social Worker',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            244 => 
+            array (
+                'id' => 306,
+                'name' => 'Sugar Technician',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            245 => 
+            array (
+                'id' => 307,
+                'name' => 'Veterinarian',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            246 => 
+            array (
+                'id' => 308,
+                'name' => 'X-Ray Technologist',
+                'type' => 'License',
+                'is_active' => 1,
+            ),
+            247 => 
+            array (
+                'id' => 309,
+                'name' => 'Eligibility',
+                'type' => 'Type',
+                'is_active' => 1,
+            ),
+            248 => 
+            array (
+                'id' => 310,
+                'name' => 'License',
+                'type' => 'Type',
+                'is_active' => 1,
+            ),
+            249 => 
+            array (
+                'id' => 311,
+                'name' => 'Doctorate Degree',
+                'type' => 'Level',
+                'is_active' => 1,
+            ),
+            250 => 
+            array (
+                'id' => 312,
+                'name' => 'Master’s Degree',
+                'type' => 'Level',
+                'is_active' => 1,
+            ),
+            251 => 
+            array (
+                'id' => 313,
+                'name' => 'Bachelor’s Degree',
+                'type' => 'Level',
+                'is_active' => 1,
+            ),
+            252 => 
+            array (
+                'id' => 314,
+                'name' => 'Associate Degree ',
+                'type' => 'Level',
+                'is_active' => 1,
+            ),
+            253 => 
+            array (
+                'id' => 315,
+                'name' => 'Senior High School',
+                'type' => 'Level',
+                'is_active' => 1,
+            ),
+            254 => 
+            array (
+                'id' => 316,
+                'name' => 'Junior High School',
+                'type' => 'Level',
+                'is_active' => 1,
+            ),
+            255 => 
+            array (
+                'id' => 317,
+                'name' => 'Others',
+                'type' => 'Level',
+                'is_active' => 1,
+            ),
         ));
 
         

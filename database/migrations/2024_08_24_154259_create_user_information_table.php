@@ -14,11 +14,9 @@ return new class extends Migration
         Schema::create('user_information', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->longText('accounts');
-            $table->longText('contacts');
-            $table->longText('backgrounds');
-            $table->string('barangay_code');
-            $table->foreign('barangay_code')->references('code')->on('location_barangays')->onDelete('cascade');
+            $table->json('accounts');
+            $table->json('contacts');
+            $table->json('backgrounds');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();

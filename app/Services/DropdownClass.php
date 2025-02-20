@@ -15,6 +15,59 @@ use App\Models\LocationBarangay;
 
 class DropdownClass
 {  
+    public function levels(){
+        $data = ListData::where('type','Level')->where('is_active',1)->get()->map(function ($item) {
+            return [
+                'value' => $item->id,
+                'name' => $item->name
+            ];
+        });
+        return $data;
+    }
+
+    public function eligibilities(){
+        $data = ListData::where('type','Eligibility')->where('is_active',1)->get()->map(function ($item) {
+            return [
+                'value' => $item->id,
+                'name' => $item->name
+            ];
+        });
+        return $data;
+    }
+
+    public function licenses(){
+        $data = ListData::where('type','License')->where('is_active',1)->get()->map(function ($item) {
+            return [
+                'value' => $item->id,
+                'name' => $item->name
+            ];
+        });
+        return $data;
+    }
+
+    public function types(){
+        $data = ListData::where('type','Type')->where('is_active',1)->get()->map(function ($item) {
+            return [
+                'value' => $item->id,
+                'name' => $item->name
+            ];
+        });
+        return $data;
+    }
+
+    public function statuses(){
+        $data = ListStatus::where('classification','Status')->where('is_active',1)->get()->map(function ($item) {
+            return [
+                'value' => $item->id,
+                'name' => $item->name,
+                'type' => $item->type,
+                'color' => $item->color,
+                'color' => $item->others,
+            ];
+        });
+        return $data;
+    }
+
     public function positions(){
         $data = ListPosition::with('special','administrative')->get()->map(function ($item) {
             return [

@@ -11,6 +11,12 @@ class UserInformation extends Model
 
     protected $fillable = ['accounts','contacts','backgrounds','barangay_code','user_id'];
 
+    protected $casts = [
+        'accounts' => 'array', 
+        'contacts' => 'array', 
+        'backgrounds' => 'array', 
+    ];
+
     public function user()
     {
         return $this->belongsTo('App\Models\User', 'user_id', 'id');

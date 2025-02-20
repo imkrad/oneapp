@@ -9,24 +9,26 @@
                 <span class="fw-semibold fs-14" data-key="t-dashboards">Dashboard</span>
                 </Link>
             </li>
-            <li class="menu-title">
-                <i class="ri-more-fill" aria-expanded="false"></i>
-                <span data-key="t-menu">Regular Employee</span>
-            </li>
-            <li class="nav-item">
-                <Link href="/patients" class="nav-link menu-link"
-                :class="{'active': $page.component.startsWith('Patients') }">
-                <i class="ri-bill-fill "></i>
-                <span class="fw-semibold fs-14" data-key="t-dashboards">Requests</span>
-                </Link>
-            </li>
-            <li class="nav-item">
-                <Link href="/patients" class="nav-link menu-link"
-                :class="{'active': $page.component.startsWith('Patients') }">
-                <i class="ri-calendar-2-fill"></i>
-                <span class="fw-semibold fs-14" data-key="t-dashboards">Calendar</span>
-                </Link>
-            </li>
+            <tempalte v-if="$page.props.roles.includes('Travel Controler Officer')">
+                <li class="menu-title">
+                    <i class="ri-more-fill" aria-expanded="false"></i>
+                    <span data-key="t-menu">Regular Employee</span>
+                </li>
+                <li class="nav-item">
+                    <Link href="/patients" class="nav-link menu-link"
+                    :class="{'active': $page.component.startsWith('Patients') }">
+                    <i class="ri-bill-fill "></i>
+                    <span class="fw-semibold fs-14" data-key="t-dashboards">Requests</span>
+                    </Link>
+                </li>
+                <li class="nav-item">
+                    <Link href="/patients" class="nav-link menu-link"
+                    :class="{'active': $page.component.startsWith('Patients') }">
+                    <i class="ri-calendar-2-fill"></i>
+                    <span class="fw-semibold fs-14" data-key="t-dashboards">Calendar</span>
+                    </Link>
+                </li>
+            </tempalte>
             <tempalte v-if="$page.props.roles.includes('Human Resource Officer')">
                 <li class="menu-title">
                     <i class="ri-more-fill" aria-expanded="false"></i>

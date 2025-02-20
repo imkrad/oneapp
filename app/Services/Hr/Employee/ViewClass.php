@@ -2,6 +2,7 @@
 
 namespace App\Services\Hr\Employee;
 
+use Hashids\Hashids;
 use App\Models\User;
 use App\Models\ListData;
 use App\Models\UserOrganization;
@@ -22,9 +23,10 @@ class ViewClass
 
     public function lists($request){
         $data = EmployeeResource::collection(
-            User::with('profile','organization','information','academics','eligibilities')
-            ->with('education.course','education.campus.school')
-            ->with('address.region','address.province','address.municipality','address.barangay')
+            User::select('users.id','email','username','users.created_at')
+            ->with('profile.religion','profile.blood','profile.marital')
+            ->with('organization.division','organization.position.special','organization.position.administrative','organization.unit','organization.station','organization.type','organization.status')
+            ->with('information','academics','credentials')
             ->join('user_profiles', 'user_profiles.user_id', '=', 'users.id')
             ->when($request->keyword, function ($query, $keyword) {
                 $query->whereHas('profile',function ($query) use ($keyword) {
@@ -54,6 +56,20 @@ class ViewClass
             })
             ->orderBy('user_profiles.lastname', 'ASC')
             ->paginate($request->count)
+        );
+        return $data;
+    }
+
+    public function view($code){
+        $hashids = new Hashids('krad',10);
+        $id = $hashids->decode($code);
+
+        $data = new EmployeeResource(
+            User::query()
+            ->with('profile.religion','profile.blood','profile.marital')
+            ->with('organization.division','organization.position.special','organization.position.administrative','organization.unit','organization.station','organization.type','organization.status')
+            ->with('information','academics.level','credentials.type','credentials.name')
+            ->where('id',$id)->first()
         );
         return $data;
     }

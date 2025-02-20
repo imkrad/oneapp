@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('sex',8);
             $table->date('birthdate');
             $table->string('contact_no',20);
-            $table->string('avatar', 2048)->default('avatar');
+            $table->string('avatar', 2048)->default('avatar.jpg');
             $table->smallInteger('marital_id')->unsigned()->index(); 
             $table->foreign('marital_id')->references('id')->on('list_data')->onDelete('cascade');
             $table->smallInteger('religion_id')->unsigned()->index();

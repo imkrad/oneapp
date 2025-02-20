@@ -34,6 +34,7 @@ class EmployeeController extends Controller
                         'divisions' => $this->dropdown->divisions(),
                         'stations' => $this->dropdown->stations(),
                         'positions' => $this->dropdown->positions(),
+                        'statuses' => $this->dropdown->statuses(),
                         'employment_statuses' => $this->dropdown->employment_statuses()
                     ],
                     'counts' => $this->view->counts()
@@ -47,6 +48,12 @@ class EmployeeController extends Controller
                 case 'employee':
                     return $this->save->store($request);
                 break;
+                case 'credential':
+                    return $this->save->credential($request);
+                break;
+                case 'academic':
+                    return $this->save->academic($request);
+                break;
             }
         });
 
@@ -55,6 +62,18 @@ class EmployeeController extends Controller
             'message' => $result['message'],
             'info' => $result['info'],
             'status' => $result['status'],
+        ]);
+    }
+
+    public function show($code){
+        return inertia('Modules/HumanResource/Employees/View',[
+            'employee_data' => $this->view->view($code),
+            'dropdowns' => [
+                'eligibilities' => $this->dropdown->eligibilities(),
+                'licenses' => $this->dropdown->licenses(),
+                'levels' => $this->dropdown->levels(),
+                'types' => $this->dropdown->types(),
+            ]
         ]);
     }
 }

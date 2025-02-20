@@ -60,9 +60,9 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasMany('App\Models\UserAcademic', 'user_id');
     }
 
-    public function eligibilities()
+    public function credentials()
     {
-        return $this->hasMany('App\Models\UserEligibility', 'user_id');
+        return $this->hasMany('App\Models\UserCredential', 'user_id')->orderBy('created_at','DESC');
     }
 
     public function authentications()

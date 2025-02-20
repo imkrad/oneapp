@@ -21,7 +21,7 @@ return new class extends Migration
             $table->foreign('level_id')->references('id')->on('list_data')->onDelete('cascade');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->year('graduated_at')->nullable;
+            $table->year('graduated_at')->nullable();
             $table->timestamps();
         });
     }

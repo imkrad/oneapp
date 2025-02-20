@@ -1,5 +1,5 @@
 <template>
-<Head title="Campuses"/>
+<Head title="Employees"/>
     <PageHeader title="List of Employees" pageTitle="List" />
     <BRow>
         <div class="col-md-12">
@@ -31,6 +31,7 @@
                                 <Multiselect v-if="filter.division" class="white" style="width: 11%;" :options="units" v-model="filter.unit" label="short" :searchable="true" placeholder="Select Unit" />
                                 <Multiselect class="white" style="width: 13%;" :options="dropdowns.divisions" v-model="filter.division" label="others" :searchable="true" placeholder="Select Division" />
                                 <Multiselect class="white" style="width: 13%;" :options="dropdowns.stations" v-model="filter.station" label="others" :searchable="true" placeholder="Select Stations" />
+                                <Multiselect class="white" style="width: 13%;" :options="dropdowns.statuses" v-model="filter.status" label="name" :searchable="true" placeholder="Select Status" />
                                 <span @click="refresh()" class="input-group-text" v-b-tooltip.hover title="Refresh" style="cursor: pointer;"> 
                                     <i class="bx bx-refresh search-icon"></i>
                                 </span>
@@ -46,7 +47,7 @@
                         <div class="flex-grow-1">
                             <ul class="nav nav-tabs nav-tabs-custom nav-primary fs-12" role="tablist">
                                 <li class="nav-item">
-                                    <BLink class="nav-link py-3 active" data-bs-toggle="tab" role="tab" aria-selected="true">
+                                    <BLink @click="viewStatus(null,null)" class="nav-link py-3 active" data-bs-toggle="tab" role="tab" aria-selected="true">
                                     <i class="ri-apps-2-line me-1 align-bottom"></i> All Employees
                                     </BLink>
                                 </li>
@@ -78,11 +79,37 @@
                                     <th style="width: 13%;" class="text-center">Email</th>
                                     <th style="width: 13%;" class="text-center">Birthdate</th>
                                     <th style="width: 10%;" class="text-center">Status</th>
-                                    <th style="width: 5%;"></th>
+                                    <th style="width: 6%;"></th>
                                 </tr>
                             </thead>
                             <tbody class="table-white fs-12">
-                               
+                                <tr v-for="(list,index) in lists" v-bind:key="index" >
+                                    <td class="text-center"> 
+                                        <div class="avatar-xs chat-user-img online">
+                                            <img :src="list.avatar" alt="" class="avatar-xs rounded-circle">
+                                            <!-- <span v-if="list.is_active" class="user-status text-success"></span> -->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h5 class="fs-13 mb-0 fw-semibold text-primary text-uppercase">{{list.profile.lastname}}, {{list.profile.firstname}} {{list.profile.middlename}}.</h5>
+                                        <p class="fs-12 text-muted mb-0" v-if="list.organization.type.name == 'Plantilla'">{{list.organization.position.special.name}}</p>
+                                        <p class="fs-12 text-muted mb-0" v-else>{{list.organization.position.administrative.name}}</p>
+                                    </td>
+                                    <td class="text-center">{{ list.organization.type.name }}</td>
+                                    <td class="text-center">{{ list.profile.contact_no }}</td>
+                                    <td class="text-center">{{ list.email }}</td>
+                                    <td class="text-center">{{ list.profile.birthdate }}</td>
+                                    <td class="text-center">
+                                        <span :class="'badge '+list.organization.status.color+' '+list.organization.status.type">{{list.organization.status.name}}</span>
+                                    </td>
+                                    <td class="text-end">
+                                        <Link :href="`/employees/${list.code}`">
+                                            <b-button variant="soft-info" class="me-1" v-b-tooltip.hover title="View" size="sm">
+                                                <i class="ri-eye-fill align-bottom"></i>
+                                            </b-button>
+                                        </Link>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -130,20 +157,20 @@ export default {
             if(!newVal){
                 this.units = [];
                 this.filter.unit = null;
+                this.fetch();
             }else{
                 this.fetchUnits(newVal);
                 this.fetch();
             }
         },
         "filter.station"(newVal){
-            if(newVal){
-                this.fetch();
-            }
+            this.fetch();
         },
         "filter.unit"(newVal){
-            if(newVal){
-                this.fetch();
-            }
+            this.fetch();
+        },
+        "filter.status"(newVal){
+            this.fetch();
         }
     },
     created(){

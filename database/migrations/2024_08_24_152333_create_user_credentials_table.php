@@ -11,13 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user_eligibilities', function (Blueprint $table) {
+        Schema::create('user_credentials', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->smallInteger('name_id')->unsigned()->index();
             $table->foreign('name_id')->references('id')->on('list_data')->onDelete('cascade');
+            $table->smallInteger('type_id')->unsigned()->index();
+            $table->foreign('type_id')->references('id')->on('list_data')->onDelete('cascade');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->date('issued_at')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_eligibilities');
+        Schema::dropIfExists('user_credentials');
     }
 };
